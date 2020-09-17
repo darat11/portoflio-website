@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.divider {
+  border: 0.1px solid rgba(0, 0, 0, 0.157);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.tittle {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.player {
+  margin-top: 2rem;
+}
