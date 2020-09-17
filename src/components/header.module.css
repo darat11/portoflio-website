@@ -8,10 +8,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 720px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 1.5rem;
-  transition: background-image 1s;
 }
 
 /*.brandImage {
@@ -45,7 +44,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   list-style-type: none;
 }
@@ -56,7 +55,7 @@
   color: #1e272e;
   font-size: 1.2rem;
   transition: all 0.2s;
-  padding: 3px 20px;
+  padding: 3px 10px;
 }
 
 .navItem:hover {
@@ -68,4 +67,28 @@
 .navItemActive {
   color: #f5f6fa;
   background: #1e272e;
+}
+
+@media all and (max-width: 500px) {
+  .brandHeading {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .brandHeading {
+    font-size: 1.5rem;
+  }
+
+  .navItems {
+    max-width: 300px;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .navItem:hover {
+    color: #f5f6fa;
+    transform: none;
+    background: #1e272e;
+  }
 }

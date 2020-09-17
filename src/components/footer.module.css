@@ -4,6 +4,12 @@
   color: #1e272e;
 }
 
+@media all and (max-width: 400px) {
+  .footer {
+    margin-top: 3rem;
+  }
+}
+
 /* #f5f6fa
 ** #1e272e
 */
