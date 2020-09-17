@@ -54,6 +54,8 @@
 
 .textBox {
   font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .skillsItems {
@@ -68,6 +70,17 @@
   font-size: 2rem;
 }
 
+@media all and (max-width: 1350px) {
+  .divider {
+    display: none;
+  }
+
+  .textBox {
+    font-size: 1.7rem;
+    margin-bottom: -3rem;
+  }
+}
+
 @media all and (max-width: 900px) {
   .container {
     flex-direction: column;
@@ -77,12 +90,17 @@
     margin-bottom: 12rem;
   }
 
-  .divider {
-    display: none;
-  }
-
   .player {
     margin-top: 1rem;
+  }
+
+  .textBox {
+    font-size: 1.7rem;
+    margin-top: 0.7rem;
+  }
+
+  .ctaItems {
+    margin-bottom: 0;
   }
 }
 
@@ -99,5 +117,9 @@
   .about {
     min-width: 95%;
     margin: 0;
+  }
+
+  .ctaItems {
+    margin-bottom: 5rem;
   }
 }

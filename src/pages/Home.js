@@ -27,8 +27,8 @@ export default function Home() {
             order to realize my own business ideas.
           </p>
           <p>
-            Here is the list of my skills as well as some projects that I
-            decided to show you.
+            Here is the list of my skills and the projects that I decided to
+            show you.
           </p>
         </div>
         {/*<ReactPlayer
@@ -41,9 +41,9 @@ export default function Home() {
           <Button text="See my portfolio!" />
         </div>
       </div>
-      <span className={homeStyles.divider}></span>
+      {/*<span className={homeStyles.divider}></span>*/}
       <div className={homeStyles.skills}>
-        <h1 className={homeStyles.tittle}>Skills</h1>
+        {/*<h1 className={homeStyles.tittle}>Skills</h1>*/}
         <h3 className={homeStyles.skillTitle}>Front-End</h3>
         <div className={homeStyles.skillsItems}>
           {frontEnd.map((skill) => {
