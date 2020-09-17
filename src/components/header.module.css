@@ -92,8 +92,14 @@
   }
 
   .navItem:hover {
-    color: #1e272e;
     transform: none;
+    color: #1e272e;
+    background: #f5f6fa;
+  }
+
+  .navItemActive {
+    border: 1px solid #1e272e;
+    color: #1e272e;
     background: #f5f6fa;
   }
 }
