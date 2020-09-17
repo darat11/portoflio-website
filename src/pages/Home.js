@@ -1,14 +1,14 @@
 import React from "react";
-
 import Skill from "../components/Skill";
+
+import homeStyles from "./home.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 import ReactPlayer from "react-player";
 
-import homeStyles from "./home.module.css";
-
 import data from "../data/data.json";
+import thumbnail from "../assets/images/thumbnail.jpg";
 
 const frontEnd = data["front-end"];
 const backEnd = data["back-end"];
@@ -22,6 +22,7 @@ export default function Home() {
           Lemme introduce mayself <FontAwesomeIcon icon={faHandPointDown} />
         </h1>
         <ReactPlayer
+          light={thumbnail}
           controls
           className={homeStyles.player}
           url="https://www.youtube.com/watch?v=z6QVrqBkBgc&t=363s"
