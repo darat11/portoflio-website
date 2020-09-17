@@ -9,12 +9,23 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  margin: 0 5rem;
 }
 
 .divider {
   border: 0.1px solid rgba(0, 0, 0, 0.157);
-  margin-right: 10px;
-  margin-left: 10px;
+}
+
+.dividerB {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.267);
+}
+
+.ctaItems {
+  display: flex;
+  margin: 5rem;
+  flex-direction: column;
+  height: auto;
 }
 
 .skills {
@@ -22,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  margin: 0 5rem;
 }
 
 .tittle {
@@ -31,10 +43,17 @@
   margin-bottom: 3rem;
   margin-right: -10px;
   text-transform: uppercase;
+  text-align: center;
 }
 
+/*
 .player {
   margin-top: 3rem;
+}
+*/
+
+.textBox {
+  font-size: 2rem;
 }
 
 .skillsItems {
@@ -75,5 +94,10 @@
 
   .player {
     max-width: 100vw;
+  }
+
+  .about {
+    min-width: 95%;
+    margin: 0;
   }
 }
