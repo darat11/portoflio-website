@@ -8,7 +8,6 @@ import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 import ReactPlayer from "react-player";
 
 import data from "../data/data.json";
-import thumbnail from "../assets/images/thumbnail.jpg";
 
 const frontEnd = data["front-end"];
 const backEnd = data["back-end"];
@@ -19,10 +18,9 @@ export default function Home() {
     <div className={homeStyles.container}>
       <div className={homeStyles.about}>
         <h1 className={homeStyles.tittle}>
-          Lemme introduce myself <FontAwesomeIcon icon={faHandPointDown} />
+          Let me introduce myself <FontAwesomeIcon icon={faHandPointDown} />
         </h1>
         <ReactPlayer
-          light={thumbnail}
           controls
           className={homeStyles.player}
           url="https://www.youtube.com/watch?v=z6QVrqBkBgc&t=363s"

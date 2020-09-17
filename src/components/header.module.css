@@ -33,16 +33,13 @@
 .brandHeading {
   font-family: "DM Mono", monospace;
   font-size: 8rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
   text-decoration: none;
   color: #1e272e;
 }
 
 .brandHeading:hover {
   color: #1e272e;
-}
-
-.navigation {
 }
 
 .navItems {
@@ -55,6 +52,8 @@
 }
 
 .navItem {
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
   display: flex;
   text-decoration: none;
   color: #1e272e;
@@ -86,8 +85,22 @@
     max-width: 400px;
   }
 
+  .navItem {
+    color: #1e272e;
+    font-size: 2rem;
+    transition: all 0.2s;
+    padding: 0 10px;
+    background-color: #f5f6fa;
+  }
+
   .navItem:hover {
     transform: none;
+    color: #f5f6fa;
+  }
+
+  .navItemActive {
+    color: #f5f6fa;
+    background: #1e272e;
   }
 }
 
