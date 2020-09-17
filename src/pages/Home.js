@@ -19,7 +19,7 @@ export default function Home() {
     <div className={homeStyles.container}>
       <div className={homeStyles.about}>
         <h1 className={homeStyles.tittle}>
-          Lemme introduce mayself <FontAwesomeIcon icon={faHandPointDown} />
+          Lemme introduce myself <FontAwesomeIcon icon={faHandPointDown} />
         </h1>
         <ReactPlayer
           light={thumbnail}
