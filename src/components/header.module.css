@@ -84,6 +84,9 @@
     max-width: 300px;
     justify-content: center;
     margin-left: 0;
+  }
+
+  .navItem {
     color: #f5f6fa;
     background: #1e272e;
   }
