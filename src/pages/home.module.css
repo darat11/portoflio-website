@@ -67,14 +67,14 @@
 
 @media all and (max-width: 700px) {
   .tittle {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 
 @media all and (max-width: 640px) {
   .tittle {
-    font-size: 1.5rem;
-    font-weight: bold;
+    text-align: center;
   }
 
   .player {
@@ -84,6 +84,5 @@
 
 @media all and (max-width: 520px) {
   .tittle {
-    text-align: center;
   }
 }

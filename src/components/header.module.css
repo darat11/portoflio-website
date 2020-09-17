@@ -78,6 +78,25 @@
   .brandHeading {
     font-size: 5rem;
   }
+
+  .navItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  .navItem:hover {
+    transform: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .brandHeading {
+    max-width: 50vw;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 }
 
 @media all and (max-width: 400px) {
