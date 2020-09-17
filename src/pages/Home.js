@@ -26,7 +26,7 @@ export default function Home() {
           url="https://www.youtube.com/watch?v=z6QVrqBkBgc&t=363s"
         />
       </div>
-      {/*<span className={homeStyles.divider}></span>*/}
+      <span className={homeStyles.divider}></span>
       <div className={homeStyles.skills}>
         <h1 className={homeStyles.tittle}>Skills</h1>
         <h3>Front-End</h3>

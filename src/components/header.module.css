@@ -61,12 +61,11 @@
 
 .navItem:hover {
   color: #f5f6fa;
-  transform: scale(1.05);
+  transform: scale(1.2);
   background: #1e272e;
 }
 
 .navItemActive {
   color: #f5f6fa;
-  transform: scale(1.05);
   background: #1e272e;
 }
