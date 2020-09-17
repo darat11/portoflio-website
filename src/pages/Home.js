@@ -30,13 +30,13 @@ export default function Home() {
       <span className={homeStyles.divider}></span>
       <div className={homeStyles.skills}>
         <h1 className={homeStyles.tittle}>Skills</h1>
-        <h3>Front-End</h3>
+        <h3 className={homeStyles.skillTitle}>Front-End</h3>
         <div className={homeStyles.skillsItems}>
           {frontEnd.map((skill) => {
             return <Skill skill={skill.language} />;
           })}
         </div>
-        <h3>Back-End</h3>
+        <h3 className={homeStyles.skillTitle}>Back-End</h3>
         <div className={homeStyles.skillsItems}>
           {backEnd.map((skill) => {
             return <Skill skill={skill.language} />;
