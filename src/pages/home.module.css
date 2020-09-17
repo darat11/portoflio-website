@@ -32,4 +32,12 @@
 
 .player {
   margin-top: 2rem;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.skillsItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
 }

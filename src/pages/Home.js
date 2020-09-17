@@ -1,12 +1,20 @@
 import React from "react";
 
+import Skill from "../components/Skill";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 import ReactPlayer from "react-player";
 
 import homeStyles from "./home.module.css";
 
+import data from "../data/data.json";
+
+const frontEnd = data["front-end"];
+const backEnd = data["back-end"];
+
 export default function Home() {
+  console.log(frontEnd);
   return (
     <div className={homeStyles.container}>
       <div className={homeStyles.about}>
@@ -18,10 +26,21 @@ export default function Home() {
           url="https://www.youtube.com/watch?v=z6QVrqBkBgc&t=363s"
         />
       </div>
-      <span className={homeStyles.divider}></span>
+      {/*<span className={homeStyles.divider}></span>*/}
       <div className={homeStyles.skills}>
         <h1 className={homeStyles.tittle}>Skills</h1>
-        <p>List of skills(on the right)</p>
+        <h3>Front-End</h3>
+        <div className={homeStyles.skillsItems}>
+          {frontEnd.map((skill) => {
+            return <Skill skill={skill.language} />;
+          })}
+        </div>
+        <h3>Back-End</h3>
+        <div className={homeStyles.skillsItems}>
+          {backEnd.map((skill) => {
+            return <Skill skill={skill.language} />;
+          })}
+        </div>
       </div>
     </div>
   );

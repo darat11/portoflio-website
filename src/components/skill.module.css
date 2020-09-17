@@ -1,0 +1,13 @@
+.item {
+  margin: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #1e272e;
+  border: 1px solid #1e272e;
+  color: #f5f6fa;
+  transition: all 0.2s;
+}
+
+.item:hover {
+  cursor: pointer;
+  transform: scale(1.2) skewX(5deg) skewY(-1deg);
+}

@@ -1,0 +1,38 @@
+{
+  "front-end": [
+    {
+      "id": "01",
+      "language": "JavaScript"
+    },
+    {
+      "id": "02",
+      "language": "React.js"
+    },
+    {
+      "id": "03",
+      "language": "CSS/SASS"
+    }
+  ],
+  "back-end": [
+    {
+      "id": "04",
+      "language": "C#"
+    },
+    {
+      "id": "05",
+      "language": "ASP.NET"
+    },
+    {
+      "id": "06",
+      "language": "Node.js/Express"
+    },
+    {
+      "id": "07",
+      "language": "MongoDB"
+    },
+    {
+      "id": "08",
+      "language": "SQL"
+    }
+  ]
+}
