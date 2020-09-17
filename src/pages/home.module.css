@@ -27,8 +27,9 @@
 .tittle {
   font-size: 2.5rem;
   font-weight: lighter;
-  letter-spacing: 1rem;
+  letter-spacing: 10px;
   margin-bottom: 3rem;
+  margin-right: -10px;
   text-transform: uppercase;
 }
 
@@ -69,12 +70,6 @@
 @media all and (max-width: 700px) {
   .tittle {
     font-size: 3rem;
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 640px) {
-  .tittle {
     text-align: center;
   }
 
