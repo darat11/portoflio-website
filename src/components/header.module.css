@@ -84,11 +84,13 @@
     max-width: 300px;
     justify-content: center;
     margin-left: 0;
+    color: #f5f6fa;
+    background: #1e272e;
   }
 
   .navItem:hover {
-    color: #f5f6fa;
+    color: #1e272e;
     transform: none;
-    background: #1e272e;
+    background: #f5f6fa;
   }
 }
