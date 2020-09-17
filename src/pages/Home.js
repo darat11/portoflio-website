@@ -22,6 +22,7 @@ export default function Home() {
           Lemme introduce mayself <FontAwesomeIcon icon={faHandPointDown} />
         </h1>
         <ReactPlayer
+          controls
           className={homeStyles.player}
           url="https://www.youtube.com/watch?v=z6QVrqBkBgc&t=363s"
         />
