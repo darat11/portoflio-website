@@ -13,7 +13,6 @@ const frontEnd = data["front-end"];
 const backEnd = data["back-end"];
 
 export default function Home() {
-  console.log(frontEnd);
   return (
     <div className={homeStyles.container}>
       <div className={homeStyles.about}>
