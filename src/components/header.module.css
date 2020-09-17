@@ -89,6 +89,7 @@
   .navItem {
     color: #f5f6fa;
     background: #1e272e;
+    border: 1px solid #1e272e;
   }
 
   .navItem:hover {
