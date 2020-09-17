@@ -67,7 +67,7 @@
   .player {
     margin-top: 0;
     margin-bottom: 4rem;
-    max-width: 100%;
+    max-width: 100vw;
   }
 
   .tittle {
@@ -81,6 +81,7 @@
   .player {
     margin-top: 1rem;
     margin-bottom: 6rem;
+    max-width: 100vw;
   }
 
   .tittle {
