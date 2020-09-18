@@ -10,6 +10,7 @@
   align-items: center;
   flex-grow: 1;
   margin: 0 5rem;
+  margin-top: 7rem;
 }
 
 .divider {
@@ -23,7 +24,7 @@
 
 .ctaItems {
   display: flex;
-  margin: 5rem;
+  margin: 1rem 5rem 5rem 5rem;
   flex-direction: column;
   height: auto;
 }
@@ -70,7 +71,7 @@
   font-size: 2rem;
 }
 
-@media all and (max-width: 1350px) {
+@media all and (max-width: 1440px) {
   .divider {
     display: none;
   }
@@ -78,16 +79,25 @@
   .textBox {
     font-size: 1.7rem;
     margin-bottom: -3rem;
+    margin-top: -1rem;
+  }
+
+  .ctaItems {
+    display: flex;
+    margin: 5rem 5rem 5rem 5rem;
+    flex-direction: column;
+    height: auto;
   }
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
 
   .about {
-    margin-bottom: 12rem;
+    margin-bottom: 7rem;
+    margin-top: 1rem;
   }
 
   .player {

@@ -10,7 +10,7 @@
 }
 
 .button:hover {
-  color: #f5f6fa;
+  color: #f5f6fa !important;
   transform: scale(1.2);
   background: #1e272e;
 }

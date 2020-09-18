@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
+import Button from "./Button";
+
 import headerStyles from "./header.module.css";
 
 export default function Header() {
@@ -15,31 +17,21 @@ export default function Header() {
       <nav className={headerStyles.navigation}>
         <ul className={headerStyles.navItems}>
           <li>
-            <NavLink
-              exact
-              activeClassName={headerStyles.navItemActive}
-              className={`${headerStyles.navItem}`}
-              to="/"
-            >
-              Home
+            <NavLink exact activeClassName={headerStyles.navItemActive} to="/">
+              <Button text="Home" />
             </NavLink>
           </li>
           <li>
             <NavLink
               activeClassName={headerStyles.navItemActive}
-              className={`${headerStyles.navItem}`}
               to="/portfolio"
             >
-              Portfolio
+              <Button text="Portfolio" />
             </NavLink>
           </li>
           <li>
-            <NavLink
-              activeClassName={headerStyles.navItemActive}
-              className={`${headerStyles.navItem}`}
-              to="/contact"
-            >
-              Contact
+            <NavLink activeClassName={headerStyles.navItemActive} to="/contact">
+              <Button text="Contact" />
             </NavLink>
           </li>
         </ul>

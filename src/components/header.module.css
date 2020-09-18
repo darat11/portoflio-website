@@ -33,7 +33,7 @@
 .brandHeading {
   font-family: "DM Mono", monospace;
   font-size: 8rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
   color: #1e272e;
 }
@@ -68,8 +68,9 @@
   background: #1e272e;
 }
 
-.navItemActive {
-  color: #f5f6fa;
+.navItemActive > * {
+  color: #f5f6fa !important;
+  transform: scale(1.2);
   background: #1e272e;
 }
 
