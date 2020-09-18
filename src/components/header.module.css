@@ -36,6 +36,7 @@
   text-transform: lowercase;
   text-decoration: none;
   color: #1e272e;
+  transition: all 0.2s;
 }
 
 .brandHeading:hover {
@@ -49,59 +50,26 @@
   max-width: 400px;
   margin: 0 auto;
   list-style-type: none;
-}
-
-.navItem {
-  font-family: "Roboto Mono", monospace;
-  text-transform: capitalize;
-  display: flex;
-  text-decoration: none;
-  color: #1e272e;
-  font-size: 2rem;
   transition: all 0.2s;
-  padding: 3px 10px;
-}
-
-.navItem:hover {
-  color: #f5f6fa;
-  transform: scale(1.2);
-  background: #1e272e;
 }
 
 .navItemActive > * {
   color: #f5f6fa !important;
-  transform: scale(1.2);
   background: #1e272e;
 }
 
 @media all and (max-width: 640px) {
   .brandHeading {
-    font-size: 5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
 
   .navItems {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
-  }
-
-  .navItem {
-    color: #1e272e;
-    font-size: 2rem;
-    transition: all 0.2s;
-    padding: 0 10px;
-    background-color: #f5f6fa;
-  }
-
-  .navItem:hover {
-    transform: none;
-    color: #f5f6fa;
-  }
-
-  .navItemActive {
-    color: #f5f6fa;
-    background: #1e272e;
+    max-width: 100%;
   }
 }
 
@@ -111,11 +79,8 @@
     text-align: center;
     margin-bottom: 3rem;
   }
-}
 
-@media all and (max-width: 400px) {
-  .brandHeading {
-    text-align: center;
-    margin-bottom: 3rem;
+  .navigation {
+    display: none;
   }
 }

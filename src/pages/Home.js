@@ -2,6 +2,8 @@ import React from "react";
 import Skill from "../components/Skill";
 import Button from "../components/Button";
 
+import { NavLink } from "react-router-dom";
+
 import homeStyles from "./home.module.css";
 
 /*
@@ -37,8 +39,12 @@ export default function Home() {
           url="https://www.youtube.com/watch?v=z6QVrqBkBgc&t=363s"
         />*/}
         <div className={homeStyles.ctaItems}>
-          <Button text="Contact me" />
-          <Button text="See my portfolio!" />
+          <NavLink className={homeStyles.ctaItem} to="/contact">
+            <Button text="Contact me" />
+          </NavLink>
+          <NavLink className={homeStyles.ctaItem} to="/portfolio">
+            <Button text="See my portfolio" />
+          </NavLink>
         </div>
       </div>
       {/*<span className={homeStyles.divider}></span>*/}
