@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   font-family: "Roboto Mono", monospace;
 }
@@ -8,13 +9,46 @@
   font-size: 2.5rem;
   font-weight: lighter;
   letter-spacing: 1rem;
+  margin: 0 auto;
   margin-bottom: 3rem;
   text-transform: uppercase;
 }
 
+.form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+@media all and (max-width: 1024px) {
+  .form {
+    width: 70%;
+  }
+}
+
 @media all and (max-width: 700px) {
+  .form {
+    width: 90%;
+  }
+
   .tittle {
     font-size: 3rem;
     text-align: center;
   }
+}
+
+@media all and (max-width: 400px) {
 }
