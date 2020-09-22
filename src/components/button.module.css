@@ -18,3 +18,9 @@
   background: #1e272e;
   transform: scale(1.1);
 }
+
+.button:disabled {
+  transform: scale(1.1);
+  background: #485460;
+  color: #808e9b;
+}

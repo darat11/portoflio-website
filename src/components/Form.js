@@ -1,37 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Button from "./Button";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import formStyles from "./form.module.css";
-
-const initialValues = {
-  name: "",
-  email: "",
-  message: "",
-};
-
-const onSubmit = (values) => {
-  emailjs
-    .send(
-      process.env.REACT_APP_SERVICE_ID, //Email service as defined in EmailJS setting
-      process.env.REACT_APP_TEMPLATE_ID, // Email template ID provided by EmailJS
-      {
-        from_name: values.name,
-        email: values.email,
-        message: values.message,
-      },
-      process.env.REACT_APP_USER_ID // EmailJS user ID
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-};
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Required"),
@@ -39,6 +11,41 @@ const validationSchema = Yup.object({
 });
 
 const FormComponent = () => {
+  const [sent, setSent] = useState({
+    value: "",
+    submitted: false,
+  });
+
+  const initialValues = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
+  const onSubmit = (values) => {
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID, //Email service as defined in EmailJS setting
+        process.env.REACT_APP_TEMPLATE_ID, // Email template ID provided by EmailJS
+        {
+          from_name: values.name,
+          email: values.email,
+          message: values.message,
+        },
+        process.env.REACT_APP_USER_ID // EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    setSent({ submitted: true });
+  };
+
   /*console.log("Form values", formik.values);*/
 
   return (
@@ -92,7 +99,16 @@ const FormComponent = () => {
             name="message"
           />
         </div>
-        <Button text="Send" type="submit"></Button>
+        {sent.submitted ? (
+          <Button
+            text="Message sent"
+            type="submit"
+            className={formStyles.btnSent}
+            disabled={true}
+          />
+        ) : (
+          <Button text="Send" type="submit"></Button>
+        )}
       </Form>
     </Formik>
   );
