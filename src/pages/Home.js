@@ -26,7 +26,7 @@ export default function Home() {
           <p className={homeStyles.dividerB}>
             I have been always involved in coding and it was my main hobby for
             very long time. However, since 2018 I am fully commited to learn and
-            build with code in order to develope my own business ideas.
+            develope with code in order to implement my own business ideas.
           </p>
           <p>
             Here is the list of my skills and the projects that I decided to
