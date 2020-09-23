@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import FormComponent from "../components/Form";
 import contactStyles from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,12 +19,20 @@ export default function Contact() {
       </div>
 
       <div className={contactStyles.iconBox}>
-        <Link to="https://github.com/darat11/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/darat11/"
+        >
           <FontAwesomeIcon icon={faGithub} className={contactStyles.icon} />
-        </Link>
-        <Link to="https://twitter.com/Meldin52288635">
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/Meldin52288635"
+        >
           <FontAwesomeIcon icon={faTwitter} className={contactStyles.icon} />
-        </Link>
+        </a>
       </div>
     </div>
   );
