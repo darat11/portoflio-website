@@ -94,21 +94,18 @@ const FormComponent = () => {
           <Field
             as="textarea"
             className="u-full-width"
-            placeholder="Hi. Could you send me a qoute? Here is the link for the design => ..."
+            placeholder="Hi. Could you send me a qoute? Here is the link for the design ..."
             id="message"
             name="message"
           />
         </div>
-        {sent.submitted ? (
-          <Button
-            text="Message sent"
-            type="submit"
-            className={formStyles.btnSent}
-            disabled={true}
-          />
-        ) : (
-          <Button text="Send" type="submit"></Button>
-        )}
+        <div className={formStyles.btn}>
+          {sent.submitted ? (
+            <Button text="Message sent" type="submit" disabled={true} />
+          ) : (
+            <Button text="Send" type="submit"></Button>
+          )}
+        </div>
       </Form>
     </Formik>
   );

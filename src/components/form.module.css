@@ -13,7 +13,29 @@
   color: #ff3f34 !important;
 }
 
-@media all and (max-width: 400px) {
+.btn {
+  max-width: 40%;
+  margin: 0 auto;
+  border-bottom: 1px solid #1e272e;
+}
+
+@media all and (max-width: 1440px) {
+  .btn {
+    max-width: 60%;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .btn {
+    max-width: 70%;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .btn {
+    max-width: 80%;
+  }
+
   textarea {
     height: 70px;
   }

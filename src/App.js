@@ -3,9 +3,7 @@ import Layout from "./components/Layout";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-
 import { Helmet } from "react-helmet";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

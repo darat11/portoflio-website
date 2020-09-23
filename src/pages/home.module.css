@@ -23,6 +23,10 @@
   border-bottom: 1px dashed rgba(0, 0, 0, 0.267);
 }
 
+.ctaItem:first-child {
+  border-bottom: 1px solid #1e272e;
+}
+
 .ctaItems {
   display: flex;
   margin: 1rem 5rem 5rem 5rem;
